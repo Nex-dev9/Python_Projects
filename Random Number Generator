@@ -1,1 +1,19 @@
+import random
+
+def generate_numbers(start, end, count):
+    numbers = []
+    for _ in range(count):
+        number = random.randint(start, end)
+        numbers.append(number)
+    return numbers
+
+start_num = int(input("Enter the start number: "))
+end_num = int(input("Enter the end number: "))
+num_count = int(input("Enter the number of random numbers to generate: "))
+
+random_numbers = generate_numbers(start_num, end_num, num_count)
+
+print("Generated Random Numbers:")
+for num in random_numbers:
+    print(num)
 
